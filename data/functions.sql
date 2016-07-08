@@ -687,3 +687,14 @@ BEGIN
   RETURN CASE WHEN val IS NULL THEN 'null' ELSE to_json(val) END;
 END;
 $$ LANGUAGE plpgsql IMMUTABLE;
+
+-- the list of values was taken from the first 4 pages of taginfo for building
+CREATE OR REPLACE FUNCTION mz_building_kind_detail(val TEXT)
+RETURNS TEXT AS $$
+DECLARE
+BEGIN
+  RETURN CASE WHEN val = 'yes' THEN NULL
+              WHEN val IN ('house', 'residential', 'garage', 'apartments', 'hut', 'industrial', 'roof', 'shed', 'detached', 'commercial', 'garages', 'terrace', 'school', 'retail', 'farm_auxiliary', 'construction', 'church', 'barn', 'greenhouse', 'service', 'cabin', 'manufacture', 'farm', 'warehouse', 'civic', 'office', 'collapsed', 'university', 'public', 'hangar', 'entrance', 'hospital', 'static_caravan', 'hotel', 'chapel', 'semidetached_house', 'damaged', 'kindergarten', 'transportation', 'train_station', 'dormitory', 'storage_tank', 'trullo', 'stable', 'ger', 'houseboat', 'shop', 'college', 'ruins', 'semi', 'bunker', 'pajaru', 'mosque', 'bungalow', 'slurry_tank', 'supermarket', 'transformer_tower', 'duplex', 'factory', 'cowshed', 'constructie', 'dam', 'agricultural', 'tank', 'shelter', 'dwelling_house', 'temple', 'tower', 'agricultural', 'tank', 'shelter', 'dwelling_house', 'temple', 'tower', 'silo', 'residence', 'pavilion', 'store', 'support', 'allotment_house', 'summer_cottage', 'mobile_home', 'administrative', 'kiosk', 'other', 'boathouse', 'glasshouse', 'storage') THEN val
+              ELSE NULL END;
+END;
+$$ LANGUAGE plpgsql IMMUTABLE;

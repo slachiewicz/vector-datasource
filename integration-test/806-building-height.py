@@ -2,7 +2,7 @@
 # https://www.openstreetmap.org/way/161390790
 assert_has_feature(
     16, 55897, 25449, 'buildings',
-    { 'id': 161390790, 'height': 77.0, 'kind': 'office',
+    { 'id': 161390790, 'height': 77.0, 'kind': 'building',
       'building:levels': type(None), 'building_levels': type(None) })
 
 # http://www.openstreetmap.org/way/336433763
