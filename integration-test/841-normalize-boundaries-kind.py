@@ -2,7 +2,7 @@
 # http://www.openstreetmap.org/way/174550914
 assert_has_feature(
     16, 10237, 24570, 'boundaries',
-    {'id': 174550914, 'kind': 'aboriginal_lands', 'kind_detail': '4'})
+    {'id': 174550914, 'kind': 'aboriginal_lands', 'kind_detail': '3'})
 
 # Way: United States of America (42298798)
 # http://www.openstreetmap.org/way/42298798

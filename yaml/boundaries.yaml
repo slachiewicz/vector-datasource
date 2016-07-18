@@ -6,14 +6,14 @@ filters:
       boundary: administrative
       'tags->boundary:type': aboriginal_lands
     min_zoom: 8
-    output: {kind: aboriginal_lands, kind_detail: {col: admin_level}}
+    output: {kind: aboriginal_lands, kind_detail: '3'}
     table: osm
   - filter:
       admin_level: ['6', '8']
       boundary: administrative
       'tags->boundary:type': aboriginal_lands
     min_zoom: 10
-    output: {kind: aboriginal_lands, kind_detail: {col: admin_level}}
+    output: {kind: aboriginal_lands, kind_detail: '3'}
     table: osm
   - filter: {admin_level: '2', boundary: administrative}
     min_zoom: 8
