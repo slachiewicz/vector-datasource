@@ -15,7 +15,7 @@ Shapely==1.4.3
 simplejson==3.6.4
 six==1.10.0
 StreetNames==0.1.5
-Werkzeug==0.9.6
+Werkzeug==0.15.3
 wsgiref==0.1.2
 git+https://github.com/ixc/python-edtf@aad32b8d5cd8848c50fbef92c73697a93cf182ba#edtf
 git+https://github.com/mapzen/mapbox-vector-tile@master#egg=mapbox-vector-tile
